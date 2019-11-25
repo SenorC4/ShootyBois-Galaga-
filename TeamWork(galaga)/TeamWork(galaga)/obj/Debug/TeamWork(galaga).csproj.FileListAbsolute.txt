@@ -1,0 +1,33 @@
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\bin\Debug\TeamWork(galaga).exe.config
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\bin\Debug\TeamWork(galaga).exe
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\bin\Debug\TeamWork(galaga).pdb
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csprojAssemblyReference.cache
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Form1.resources
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Properties.Resources.resources
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csproj.GenerateResource.cache
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csproj.CoreCompileInputs.cache
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).exe
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).pdb
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\bin\Debug\TeamWork(galaga).exe.config
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\bin\Debug\TeamWork(galaga).exe
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\bin\Debug\TeamWork(galaga).pdb
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csprojAssemblyReference.cache
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Form1.resources
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Properties.Resources.resources
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csproj.GenerateResource.cache
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csproj.CoreCompileInputs.cache
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).exe
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).pdb
+C:\Users\lukel\Desktop\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Form2.resources
+D:\TeamWork(galaga)\TeamWork(galaga)\bin\Debug\TeamWork(galaga).exe.config
+D:\TeamWork(galaga)\TeamWork(galaga)\bin\Debug\TeamWork(galaga).exe
+D:\TeamWork(galaga)\TeamWork(galaga)\bin\Debug\TeamWork(galaga).pdb
+D:\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csprojAssemblyReference.cache
+D:\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Form1.resources
+D:\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Form2.resources
+D:\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Properties.Resources.resources
+D:\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csproj.GenerateResource.cache
+D:\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csproj.CoreCompileInputs.cache
+D:\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).exe
+D:\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).pdb
+C:\Users\815679\OneDrive - Modesto City Schools\Game Design\Coding 2020\form apps\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Form2.resources
