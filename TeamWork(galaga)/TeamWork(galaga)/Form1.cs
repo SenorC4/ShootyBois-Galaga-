@@ -13,10 +13,12 @@ namespace TeamWork_galaga_
     public partial class Form1 : Form
     {
         //Create variables
+        int AlienplayerSpeed = 40;
+        int round = 1;
         int shotAlien = 0;
         int score = 0;
         int shot = -1;
-        int speed = 8;
+        int playerSpeed = 8;
         bool moveRight, moveLeft;
         bool left = false;
         bool right = true;
@@ -50,6 +52,8 @@ namespace TeamWork_galaga_
                 badBois.Add((PictureBox)Controls.Find("badPew" + i, true)[0]);
             }
 
+            
+
             for (int i = 0; i < 15; i++)
             {
                 shootyBois.Add((PictureBox)Controls.Find("picLazer" + i, true)[0]);
@@ -62,6 +66,10 @@ namespace TeamWork_galaga_
             {
                 shootyBois[i].Left = 20000;
             }
+            for (int i = 1; i < badBois.Count; i++)
+            {
+                badBois[i].Left = 30000;
+            }
         }
 
         //Timer to allow for ship movement
@@ -70,11 +78,11 @@ namespace TeamWork_galaga_
             //move if keydown = true
             if (moveLeft)
             {
-                player.Left -= speed;
+                player.Left -= playerSpeed;
             }
             if (moveRight)
             {
-                player.Left += speed;
+                player.Left += playerSpeed;
             }
         
             // detect boundaries
@@ -308,7 +316,11 @@ namespace TeamWork_galaga_
                         lbScore.Text = "Score:" + score;
                         if(aliens.Count == 0)
                         {
-                            MessageBox.Show("You Win!");
+                            round++;
+                            lbRound.Text = "Round: " + round;
+                            MessageBox.Show(lbRound.Text);
+                            restart();
+                            
                         }
                     }
             }
@@ -375,7 +387,38 @@ namespace TeamWork_galaga_
         {
             for (int i = 0; i < aliens.Count; i++)
             {
-                aliens[i].Top = aliens[i].Top + 40;
+                aliens[i].Top = aliens[i].Top + AlienplayerSpeed;
+            }
+        }
+
+        private void restart()
+        {
+            for (int i = 1; i < 21; i++)
+            {
+                aliens.Add((PictureBox)Controls.Find("alien" + i, true)[0]);
+            }
+            AlienplayerSpeed += 10;
+
+            for (int i = 0; i < aliens.Count; i++)
+            {
+                aliens[i].Visible = true;
+            }
+
+            for (int i = 0; i < 20; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    aliens[i].Top = 50;
+                    
+                }
+
+                else{
+                    aliens[i].Top = 100;
+                }
+            }
+            for(int i = 0; i < 20; i++)
+            {
+                aliens[i].Left = ((i - 1) * 75) + 500;
             }
         }
     }
