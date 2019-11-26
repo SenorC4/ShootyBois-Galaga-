@@ -36,6 +36,18 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.shootTime = new System.Windows.Forms.Timer(this.components);
             this.moveDown = new System.Windows.Forms.Timer(this.components);
+            this.playerExplosion = new System.Windows.Forms.PictureBox();
+            this.badPew8 = new System.Windows.Forms.PictureBox();
+            this.badPew9 = new System.Windows.Forms.PictureBox();
+            this.badPew10 = new System.Windows.Forms.PictureBox();
+            this.badPew11 = new System.Windows.Forms.PictureBox();
+            this.badPew12 = new System.Windows.Forms.PictureBox();
+            this.badPew7 = new System.Windows.Forms.PictureBox();
+            this.badPew2 = new System.Windows.Forms.PictureBox();
+            this.badPew3 = new System.Windows.Forms.PictureBox();
+            this.badPew4 = new System.Windows.Forms.PictureBox();
+            this.badPew5 = new System.Windows.Forms.PictureBox();
+            this.badPew6 = new System.Windows.Forms.PictureBox();
             this.badPew1 = new System.Windows.Forms.PictureBox();
             this.alien13 = new System.Windows.Forms.PictureBox();
             this.alien17 = new System.Windows.Forms.PictureBox();
@@ -75,18 +87,19 @@
             this.picLazer4 = new System.Windows.Forms.PictureBox();
             this.picLazer2 = new System.Windows.Forms.PictureBox();
             this.picLazer1 = new System.Windows.Forms.PictureBox();
-            this.picLazer = new System.Windows.Forms.PictureBox();
-            this.badPew6 = new System.Windows.Forms.PictureBox();
-            this.badPew5 = new System.Windows.Forms.PictureBox();
-            this.badPew4 = new System.Windows.Forms.PictureBox();
-            this.badPew3 = new System.Windows.Forms.PictureBox();
-            this.badPew2 = new System.Windows.Forms.PictureBox();
-            this.badPew8 = new System.Windows.Forms.PictureBox();
-            this.badPew9 = new System.Windows.Forms.PictureBox();
-            this.badPew10 = new System.Windows.Forms.PictureBox();
-            this.badPew11 = new System.Windows.Forms.PictureBox();
-            this.badPew12 = new System.Windows.Forms.PictureBox();
-            this.badPew7 = new System.Windows.Forms.PictureBox();
+            this.picLazer0 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.playerExplosion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.badPew1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alien13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alien17)).BeginInit();
@@ -126,18 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLazer4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLazer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLazer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLazer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLazer0)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -201,12 +203,135 @@
             this.moveDown.Interval = 3000;
             this.moveDown.Tick += new System.EventHandler(this.MoveDown_Tick);
             // 
+            // playerExplosion
+            // 
+            this.playerExplosion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.playerExplosion.BackColor = System.Drawing.Color.Transparent;
+            this.playerExplosion.BackgroundImage = global::TeamWork_galaga_.Properties.Resources.explosion;
+            this.playerExplosion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.playerExplosion.Location = new System.Drawing.Point(1467, 866);
+            this.playerExplosion.Name = "playerExplosion";
+            this.playerExplosion.Size = new System.Drawing.Size(40, 50);
+            this.playerExplosion.TabIndex = 61;
+            this.playerExplosion.TabStop = false;
+            this.playerExplosion.Visible = false;
+            // 
+            // badPew8
+            // 
+            this.badPew8.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew8.Location = new System.Drawing.Point(808, 266);
+            this.badPew8.Name = "badPew8";
+            this.badPew8.Size = new System.Drawing.Size(5, 25);
+            this.badPew8.TabIndex = 60;
+            this.badPew8.TabStop = false;
+            this.badPew8.Visible = false;
+            // 
+            // badPew9
+            // 
+            this.badPew9.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew9.Location = new System.Drawing.Point(838, 266);
+            this.badPew9.Name = "badPew9";
+            this.badPew9.Size = new System.Drawing.Size(5, 25);
+            this.badPew9.TabIndex = 59;
+            this.badPew9.TabStop = false;
+            this.badPew9.Visible = false;
+            // 
+            // badPew10
+            // 
+            this.badPew10.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew10.Location = new System.Drawing.Point(869, 266);
+            this.badPew10.Name = "badPew10";
+            this.badPew10.Size = new System.Drawing.Size(5, 25);
+            this.badPew10.TabIndex = 58;
+            this.badPew10.TabStop = false;
+            this.badPew10.Visible = false;
+            // 
+            // badPew11
+            // 
+            this.badPew11.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew11.Location = new System.Drawing.Point(899, 266);
+            this.badPew11.Name = "badPew11";
+            this.badPew11.Size = new System.Drawing.Size(5, 25);
+            this.badPew11.TabIndex = 57;
+            this.badPew11.TabStop = false;
+            this.badPew11.Visible = false;
+            // 
+            // badPew12
+            // 
+            this.badPew12.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew12.Location = new System.Drawing.Point(931, 266);
+            this.badPew12.Name = "badPew12";
+            this.badPew12.Size = new System.Drawing.Size(5, 25);
+            this.badPew12.TabIndex = 56;
+            this.badPew12.TabStop = false;
+            this.badPew12.Visible = false;
+            // 
+            // badPew7
+            // 
+            this.badPew7.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew7.Location = new System.Drawing.Point(780, 266);
+            this.badPew7.Name = "badPew7";
+            this.badPew7.Size = new System.Drawing.Size(5, 25);
+            this.badPew7.TabIndex = 55;
+            this.badPew7.TabStop = false;
+            this.badPew7.Visible = false;
+            // 
+            // badPew2
+            // 
+            this.badPew2.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew2.Location = new System.Drawing.Point(622, 266);
+            this.badPew2.Name = "badPew2";
+            this.badPew2.Size = new System.Drawing.Size(5, 25);
+            this.badPew2.TabIndex = 54;
+            this.badPew2.TabStop = false;
+            this.badPew2.Visible = false;
+            // 
+            // badPew3
+            // 
+            this.badPew3.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew3.Location = new System.Drawing.Point(652, 266);
+            this.badPew3.Name = "badPew3";
+            this.badPew3.Size = new System.Drawing.Size(5, 25);
+            this.badPew3.TabIndex = 53;
+            this.badPew3.TabStop = false;
+            this.badPew3.Visible = false;
+            // 
+            // badPew4
+            // 
+            this.badPew4.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew4.Location = new System.Drawing.Point(683, 266);
+            this.badPew4.Name = "badPew4";
+            this.badPew4.Size = new System.Drawing.Size(5, 25);
+            this.badPew4.TabIndex = 52;
+            this.badPew4.TabStop = false;
+            this.badPew4.Visible = false;
+            // 
+            // badPew5
+            // 
+            this.badPew5.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew5.Location = new System.Drawing.Point(713, 266);
+            this.badPew5.Name = "badPew5";
+            this.badPew5.Size = new System.Drawing.Size(5, 25);
+            this.badPew5.TabIndex = 51;
+            this.badPew5.TabStop = false;
+            this.badPew5.Visible = false;
+            // 
+            // badPew6
+            // 
+            this.badPew6.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
+            this.badPew6.Location = new System.Drawing.Point(745, 266);
+            this.badPew6.Name = "badPew6";
+            this.badPew6.Size = new System.Drawing.Size(5, 25);
+            this.badPew6.TabIndex = 50;
+            this.badPew6.TabStop = false;
+            this.badPew6.Visible = false;
+            // 
             // badPew1
             // 
             this.badPew1.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
             this.badPew1.Location = new System.Drawing.Point(594, 266);
             this.badPew1.Name = "badPew1";
-            this.badPew1.Size = new System.Drawing.Size(10, 50);
+            this.badPew1.Size = new System.Drawing.Size(5, 25);
             this.badPew1.TabIndex = 49;
             this.badPew1.TabStop = false;
             this.badPew1.Visible = false;
@@ -695,129 +820,19 @@
             this.picLazer1.TabStop = false;
             this.picLazer1.Visible = false;
             // 
-            // picLazer
+            // picLazer0
             // 
-            this.picLazer.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.picLazer.BackColor = System.Drawing.Color.Transparent;
-            this.picLazer.BackgroundImage = global::TeamWork_galaga_.Properties.Resources.gern;
-            this.picLazer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picLazer.Location = new System.Drawing.Point(964, 822);
-            this.picLazer.Name = "picLazer";
-            this.picLazer.Size = new System.Drawing.Size(10, 24);
-            this.picLazer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLazer.TabIndex = 23;
-            this.picLazer.TabStop = false;
-            this.picLazer.Visible = false;
-            // 
-            // badPew6
-            // 
-            this.badPew6.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew6.Location = new System.Drawing.Point(745, 266);
-            this.badPew6.Name = "badPew6";
-            this.badPew6.Size = new System.Drawing.Size(10, 50);
-            this.badPew6.TabIndex = 50;
-            this.badPew6.TabStop = false;
-            this.badPew6.Visible = false;
-            // 
-            // badPew5
-            // 
-            this.badPew5.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew5.Location = new System.Drawing.Point(713, 266);
-            this.badPew5.Name = "badPew5";
-            this.badPew5.Size = new System.Drawing.Size(10, 50);
-            this.badPew5.TabIndex = 51;
-            this.badPew5.TabStop = false;
-            this.badPew5.Visible = false;
-            // 
-            // badPew4
-            // 
-            this.badPew4.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew4.Location = new System.Drawing.Point(683, 266);
-            this.badPew4.Name = "badPew4";
-            this.badPew4.Size = new System.Drawing.Size(10, 50);
-            this.badPew4.TabIndex = 52;
-            this.badPew4.TabStop = false;
-            this.badPew4.Visible = false;
-            // 
-            // badPew3
-            // 
-            this.badPew3.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew3.Location = new System.Drawing.Point(652, 266);
-            this.badPew3.Name = "badPew3";
-            this.badPew3.Size = new System.Drawing.Size(10, 50);
-            this.badPew3.TabIndex = 53;
-            this.badPew3.TabStop = false;
-            this.badPew3.Visible = false;
-            // 
-            // badPew2
-            // 
-            this.badPew2.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew2.Location = new System.Drawing.Point(622, 266);
-            this.badPew2.Name = "badPew2";
-            this.badPew2.Size = new System.Drawing.Size(10, 50);
-            this.badPew2.TabIndex = 54;
-            this.badPew2.TabStop = false;
-            this.badPew2.Visible = false;
-            // 
-            // badPew8
-            // 
-            this.badPew8.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew8.Location = new System.Drawing.Point(808, 266);
-            this.badPew8.Name = "badPew8";
-            this.badPew8.Size = new System.Drawing.Size(10, 50);
-            this.badPew8.TabIndex = 60;
-            this.badPew8.TabStop = false;
-            this.badPew8.Visible = false;
-            // 
-            // badPew9
-            // 
-            this.badPew9.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew9.Location = new System.Drawing.Point(838, 266);
-            this.badPew9.Name = "badPew9";
-            this.badPew9.Size = new System.Drawing.Size(10, 50);
-            this.badPew9.TabIndex = 59;
-            this.badPew9.TabStop = false;
-            this.badPew9.Visible = false;
-            // 
-            // badPew10
-            // 
-            this.badPew10.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew10.Location = new System.Drawing.Point(869, 266);
-            this.badPew10.Name = "badPew10";
-            this.badPew10.Size = new System.Drawing.Size(10, 50);
-            this.badPew10.TabIndex = 58;
-            this.badPew10.TabStop = false;
-            this.badPew10.Visible = false;
-            // 
-            // badPew11
-            // 
-            this.badPew11.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew11.Location = new System.Drawing.Point(899, 266);
-            this.badPew11.Name = "badPew11";
-            this.badPew11.Size = new System.Drawing.Size(10, 50);
-            this.badPew11.TabIndex = 57;
-            this.badPew11.TabStop = false;
-            this.badPew11.Visible = false;
-            // 
-            // badPew12
-            // 
-            this.badPew12.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew12.Location = new System.Drawing.Point(931, 266);
-            this.badPew12.Name = "badPew12";
-            this.badPew12.Size = new System.Drawing.Size(10, 50);
-            this.badPew12.TabIndex = 56;
-            this.badPew12.TabStop = false;
-            this.badPew12.Visible = false;
-            // 
-            // badPew7
-            // 
-            this.badPew7.Image = global::TeamWork_galaga_.Properties.Resources.gern1;
-            this.badPew7.Location = new System.Drawing.Point(780, 266);
-            this.badPew7.Name = "badPew7";
-            this.badPew7.Size = new System.Drawing.Size(10, 50);
-            this.badPew7.TabIndex = 55;
-            this.badPew7.TabStop = false;
-            this.badPew7.Visible = false;
+            this.picLazer0.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.picLazer0.BackColor = System.Drawing.Color.Transparent;
+            this.picLazer0.BackgroundImage = global::TeamWork_galaga_.Properties.Resources.gern;
+            this.picLazer0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picLazer0.Location = new System.Drawing.Point(964, 822);
+            this.picLazer0.Name = "picLazer0";
+            this.picLazer0.Size = new System.Drawing.Size(10, 24);
+            this.picLazer0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLazer0.TabIndex = 23;
+            this.picLazer0.TabStop = false;
+            this.picLazer0.Visible = false;
             // 
             // Form1
             // 
@@ -826,6 +841,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.playerExplosion);
             this.Controls.Add(this.badPew8);
             this.Controls.Add(this.badPew9);
             this.Controls.Add(this.badPew10);
@@ -879,12 +895,24 @@
             this.Controls.Add(this.picLazer4);
             this.Controls.Add(this.picLazer2);
             this.Controls.Add(this.picLazer1);
-            this.Controls.Add(this.picLazer);
+            this.Controls.Add(this.picLazer0);
             this.Name = "Form1";
             this.Text = " Galaga";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            ((System.ComponentModel.ISupportInitialize)(this.playerExplosion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.badPew6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.badPew1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alien13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alien17)).EndInit();
@@ -924,18 +952,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picLazer4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLazer2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLazer1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLazer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.badPew7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLazer0)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -963,7 +980,7 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.PictureBox alien3;
         private System.Windows.Forms.Timer shootTime;
-        private System.Windows.Forms.PictureBox picLazer;
+        private System.Windows.Forms.PictureBox picLazer0;
         private System.Windows.Forms.PictureBox picLazer1;
         private System.Windows.Forms.PictureBox picLazer2;
         private System.Windows.Forms.PictureBox picLazer4;
@@ -1001,6 +1018,7 @@
         private System.Windows.Forms.PictureBox badPew11;
         private System.Windows.Forms.PictureBox badPew12;
         private System.Windows.Forms.PictureBox badPew7;
+        private System.Windows.Forms.PictureBox playerExplosion;
     }
 }
 

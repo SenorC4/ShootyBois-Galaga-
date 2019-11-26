@@ -34,6 +34,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnBegin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,8 +74,10 @@
             this.textBox1.Location = new System.Drawing.Point(416, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(372, 426);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TabStop = false;
             this.textBox1.Text = "The game is galaga mixed with space invaders and your job is to destroy the alien" +
     "s with your ship equipped with missiles. Shoot all the aliens to progress.";
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
@@ -99,12 +102,25 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Right = d";
             // 
+            // btnBegin
+            // 
+            this.btnBegin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnBegin.Font = new System.Drawing.Font("MV Boli", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBegin.Location = new System.Drawing.Point(12, 386);
+            this.btnBegin.Name = "btnBegin";
+            this.btnBegin.Size = new System.Drawing.Size(185, 52);
+            this.btnBegin.TabIndex = 6;
+            this.btnBegin.Text = "Begin";
+            this.btnBegin.UseVisualStyleBackColor = false;
+            this.btnBegin.Click += new System.EventHandler(this.BtnBegin_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBegin);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
@@ -128,5 +144,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnBegin;
     }
 }

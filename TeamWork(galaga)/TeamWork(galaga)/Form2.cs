@@ -26,5 +26,10 @@ namespace TeamWork_galaga_
         {
 
         }
+
+        private void BtnBegin_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

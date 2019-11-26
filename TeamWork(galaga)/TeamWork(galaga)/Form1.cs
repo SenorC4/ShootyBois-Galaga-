@@ -13,6 +13,7 @@ namespace TeamWork_galaga_
     public partial class Form1 : Form
     {
         //Create variables
+        int shotAlien = 0;
         int score = 0;
         int shot = -1;
         int speed = 8;
@@ -21,14 +22,11 @@ namespace TeamWork_galaga_
         bool right = true;
         bool shooting = false;
         int j = 0;
-
-        PictureBox PictureBox1 = new PictureBox();
-
-        
         
         //Create Lists
         List<PictureBox> aliens = new List<PictureBox>();
-        List<PictureBox> shootyBois = new List<PictureBox>(); 
+        List<PictureBox> shootyBois = new List<PictureBox>();
+        List<PictureBox> badBois = new List<PictureBox>();
         public Form1()
         {
             InitializeComponent();
@@ -46,31 +44,18 @@ namespace TeamWork_galaga_
             {
                 aliens.Add((PictureBox)Controls.Find("alien" + i, true) [0] );
             }
-            //aliens.Add(alien3);
-            //aliens.Add(alien7);
-            //aliens.Add(alien1);
-            //aliens.Add(alien9);
-            //aliens.Add(alien5);
-            //aliens.Add(alien4);
-            //aliens.Add(alien2);
-            //aliens.Add(alien8);
-            //aliens.Add(alien6);
-            //aliens.Add(alien10);
-            shootyBois.Add(picLazer);
-            shootyBois.Add(picLazer1);
-            shootyBois.Add(picLazer2);
-            shootyBois.Add(picLazer3);
-            shootyBois.Add(picLazer4);
-            shootyBois.Add(picLazer5);
-            shootyBois.Add(picLazer6);
-            shootyBois.Add(picLazer7);
-            shootyBois.Add(picLazer8);
-            shootyBois.Add(picLazer9);
-            shootyBois.Add(picLazer10);
-            shootyBois.Add(picLazer11);
-            shootyBois.Add(picLazer12);
-            shootyBois.Add(picLazer13);
-            shootyBois.Add(picLazer14);
+
+            for (int i = 1; i < 12; i++)
+            {
+                badBois.Add((PictureBox)Controls.Find("badPew" + i, true)[0]);
+            }
+
+            for (int i = 0; i < 15; i++)
+            {
+                shootyBois.Add((PictureBox)Controls.Find("picLazer" + i, true)[0]);
+            }
+
+            
 
             //move projectiles out of the way
             for (int i = 0; i < shootyBois.Count; i++)
@@ -113,10 +98,7 @@ namespace TeamWork_galaga_
                 player.Left = this.ClientRectangle.Right - player.Width;
                 
             }
-
-            
-            
-            
+  
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -209,36 +191,52 @@ namespace TeamWork_galaga_
         //Call alien movement
         private void Timer2_Tick(object sender, EventArgs e)
         {
-            
+            alienShoot();
             alienMovement(j);
             j++;
+            
         }
 
 
         private void ShootTime_Tick(object sender, EventArgs e)
         {
-            alienHit();
 
+            alienHit();
+            playerHit();
 
             if (shooting)
             {
 
-                shootyBois[0].Top = shootyBois[0].Top - 10;
-                shootyBois[1].Top = shootyBois[1].Top - 10;
-                shootyBois[2].Top = shootyBois[2].Top - 10;
-                shootyBois[3].Top = shootyBois[3].Top - 10;
-                shootyBois[4].Top = shootyBois[4].Top - 10;
-                shootyBois[5].Top = shootyBois[5].Top - 10;
-                shootyBois[6].Top = shootyBois[6].Top - 10;
-                shootyBois[7].Top = shootyBois[7].Top - 10;
-                shootyBois[8].Top = shootyBois[8].Top - 10;
-                shootyBois[9].Top = shootyBois[9].Top - 10;
-                shootyBois[10].Top = shootyBois[10].Top - 10;
-                shootyBois[11].Top = shootyBois[11].Top - 10;
-                shootyBois[12].Top = shootyBois[12].Top - 10;
-                shootyBois[13].Top = shootyBois[13].Top - 10;
-                shootyBois[14].Top = shootyBois[14].Top - 10;
+                shootyBois[0].Top -= 10;
+                shootyBois[1].Top -= 10;
+                shootyBois[2].Top -= 10;
+                shootyBois[3].Top -= 10;
+                shootyBois[4].Top -= 10;
+                shootyBois[5].Top -= 10;
+                shootyBois[6].Top -= 10;
+                shootyBois[7].Top -= 10;
+                shootyBois[8].Top -= 10;
+                shootyBois[9].Top -= 10;
+                shootyBois[10].Top -= 10;
+                shootyBois[11].Top -= 10;
+                shootyBois[12].Top -= 10;
+                shootyBois[13].Top -= 10;
+                shootyBois[14].Top -= 10;
             }
+
+            badBois[0].Top += 10;
+            badBois[1].Top += 10;
+            badBois[2].Top += 10;
+            badBois[3].Top += 10;
+            badBois[4].Top += 10;
+            badBois[5].Top += 10;
+            badBois[6].Top += 10;
+            badBois[7].Top += 10;
+            badBois[8].Top += 10;
+            badBois[9].Top += 10;
+            badBois[10].Top += 10;
+            
+            
 
         }
 
@@ -246,6 +244,8 @@ namespace TeamWork_galaga_
         //SHOOT
         private void shoot()
         {
+            
+
             shot++;
 
             shootyBois[shot].Left = player.Left + (player.Width / 2);
@@ -254,15 +254,43 @@ namespace TeamWork_galaga_
 
             shootyBois[shot].Visible = true;
 
-            shooting = true;
-
-
             if (shot >= 14)
             {
                 shot = 0;
             }
 
+            shooting = true;
+
             
+        }
+
+        //SHOOT
+        private void alienShoot()
+        {
+            int randAlien = 0;
+            if (aliens.Count >= 1)
+            {
+                Random rand = new Random();
+
+                randAlien = rand.Next(0, aliens.Count);
+
+
+                shotAlien++;
+
+
+                badBois[shotAlien].Left = aliens[randAlien].Left + (aliens[randAlien].Width / 2);
+
+                badBois[shotAlien].Top = aliens[randAlien].Top;
+
+                badBois[shotAlien].Visible = true;
+
+
+                if (shotAlien >= 10)
+                {
+                    shotAlien = 0;
+                }
+
+            }
         }
 
         //Alien hit detection
@@ -273,6 +301,7 @@ namespace TeamWork_galaga_
                 for (int j = 0; j < aliens.Count; j++)
                     if (shootyBois[i].Bounds.IntersectsWith(aliens[j].Bounds))
                     {
+                        
                         aliens[j].Visible = false;
                         aliens.Remove(aliens[j]);
                         score += 200;
@@ -285,6 +314,63 @@ namespace TeamWork_galaga_
             }
         }
 
+        //Alien hit detection
+        private void playerHit()
+        {
+            
+            bool hit = false;
+            
+            for (int i = 0; i < badBois.Count; i++)
+            {
+
+                if (badBois[i].Bounds.IntersectsWith(player.Bounds))
+                {
+                    hit = true;
+                    badBois[i].SetBounds(0, 0, 0, 0);
+                    
+                }
+                
+            }
+            if (hit)
+            {
+                player.Visible = false;
+                playerExplosion.Left = player.Left;
+                playerExplosion.Top = player.Top;
+                playerExplosion.Visible = true;
+                
+                if (picLife3.Visible)
+                {
+                    picLife3.Visible = false;
+                    player.Visible = true;
+                }
+                else if (picLife2.Visible)
+                {
+                    picLife2.Visible = false;
+                    player.Visible = true;
+                }
+                else if (picLife1.Visible)
+                {
+                    picLife1.Visible = false;
+                    player.Visible = true;
+
+                }
+                else
+                {
+                    MessageBox.Show("You Lose!");
+                    Application.Exit();
+                }
+                
+                score -= 100;
+                lbScore.Text = "Score:" + score;
+                hit = false;
+           
+            }
+            System.Threading.Thread.Sleep(10);
+            playerExplosion.Visible = false;
+            player.Visible = true;
+
+        }
+
         private void MoveDown_Tick(object sender, EventArgs e)
         {
             for (int i = 0; i < aliens.Count; i++)
@@ -292,52 +378,5 @@ namespace TeamWork_galaga_
                 aliens[i].Top = aliens[i].Top + 40;
             }
         }
-
-     
-
-        private void alienShooting()
-        {
-
-        }
-
-        //private void createshooty()
-        //{
-        //    PictureBox PictureBox1 = new PictureBox();
-
-        //    // Set the location and size of the PictureBox control.
-        //    //PictureBox1.Location = new System.Drawing.Point(70, 120);
-        //    PictureBox1.Left = player.Left + (player.Width / 2);
-        //    PictureBox1.Top = player.Top;
-        //    PictureBox1.Size = new System.Drawing.Size(5, 30);
-        //    PictureBox1.TabStop = false;
-
-        //    PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-
-        //    // Set the border style to a three-dimensional border.
-        //    PictureBox1.BorderStyle = BorderStyle.None;
-        //    PictureBox1.Image = Image.FromFile("C:\\Users\\lukel\\Desktop\\TeamWork(galaga)\\TeamWork(galaga)\\Resources\\gern.png");
-
-        //    // Add the PictureBox to the form.
-        //    Controls.Add(PictureBox1);
-
-        //    Moving(PictureBox1);
-
-        //}
-
-        //private void Moving(PictureBox pic)
-        //{
-        //    for(int i = 0; i < 20; i++)
-        //    {
-        //        pic.Top -= 10;
-        //    }
-        //}
     }
-
-    //public class lazer
-    //{
-    //    public lazer(String name, bool alien)
-    //    {
-
-    //    }
-    //}
 }
