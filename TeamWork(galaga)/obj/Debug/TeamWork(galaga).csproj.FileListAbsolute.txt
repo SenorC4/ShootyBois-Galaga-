@@ -42,3 +42,14 @@ C:\Users\lukel\Documents\ShootyBois-Galaga-\TeamWork(galaga)\TeamWork(galaga)\ob
 C:\Users\lukel\Documents\ShootyBois-Galaga-\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csproj.CoreCompileInputs.cache
 C:\Users\lukel\Documents\ShootyBois-Galaga-\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).exe
 C:\Users\lukel\Documents\ShootyBois-Galaga-\TeamWork(galaga)\TeamWork(galaga)\obj\Debug\TeamWork(galaga).pdb
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\bin\Debug\TeamWork(galaga).exe.config
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\bin\Debug\TeamWork(galaga).exe
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\bin\Debug\TeamWork(galaga).pdb
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csproj.AssemblyReference.cache
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Form1.resources
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Form2.resources
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\obj\Debug\TeamWork_galaga_.Properties.Resources.resources
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csproj.GenerateResource.cache
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\obj\Debug\TeamWork(galaga).csproj.CoreCompileInputs.cache
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\obj\Debug\TeamWork(galaga).exe
+C:\Users\lukel\Documents\GitHub\ShootyBois-Galaga-\TeamWork(galaga)\obj\Debug\TeamWork(galaga).pdb
